@@ -30,7 +30,7 @@ interface InstanceDefinitionInterface extends DefinitionInterface
      *
      * @return PropertyAssignmentInterface[]
      */
-    public function getPropertiesInjections();
+    public function getPropertyAssignments();
 
     /**
      * Returns an array of methods to call on the instance.
