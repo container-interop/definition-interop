@@ -3,11 +3,13 @@
 namespace Interop\Container\Definition;
 
 /**
- * Objects implementing this interface represent a pointer to another service.
+ * Pointer to a container entry.
  */
 interface ReferenceInterface
 {
     /**
+     * Returns the name of the target container entry.
+     *
      * @return string
      */
     public function getTarget();

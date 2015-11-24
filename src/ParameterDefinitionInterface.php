@@ -3,7 +3,7 @@
 namespace Interop\Container\Definition;
 
 /**
- * This class represents a parameter.
+ * Represents a container entry that is a scalar value.
  */
 interface ParameterDefinitionInterface extends DefinitionInterface
 {

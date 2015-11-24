@@ -3,7 +3,7 @@
 namespace Interop\Container\Definition;
 
 /**
- * This class represents an alias to another entry in the container.
+ * Alias a container entry to another.
  */
 interface AliasDefinitionInterface extends DefinitionInterface, ReferenceInterface
 {

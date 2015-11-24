@@ -15,7 +15,7 @@ interface PropertyAssignmentInterface
     public function getPropertyName();
 
     /**
-     * Returns the value to assign to the property.
+     * Returns the value or container entry to assign to the property.
      *
      * @return scalar|ReferenceInterface
      */

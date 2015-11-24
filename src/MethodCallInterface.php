@@ -8,16 +8,16 @@ namespace Interop\Container\Definition;
 interface MethodCallInterface
 {
     /**
-     * Returns the name of the method.
+     * Returns the name of the method to call.
      *
      * @return string
      */
     public function getMethodName();
 
     /**
-     * Returns a list of arguments passed to the constructor.
+     * Returns the list of arguments to pass when calling the method.
      *
-     * @return array Array of scalars or ReferenceInterface, or array mixing scalars, arrays, and ReferenceInterface
+     * @return array Array of scalars or ReferenceInterface.
      */
     public function getArguments();
 }
