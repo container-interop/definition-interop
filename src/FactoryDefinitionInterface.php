@@ -8,7 +8,10 @@ namespace Interop\Container\Definition;
  * The factory instance is resolved from the container. That allows to
  * inject dependencies in the factory.
  *
- * No parameters are to be passed to the method invoked on the factory.
+ * The method to call should accept only one parameter (which can
+ * be omitted if unneeded): the name of the container entry that is
+ * being resolved. That allows to reuse a factory to create different
+ * container entries.
  */
 interface FactoryDefinitionInterface extends DefinitionInterface
 {
