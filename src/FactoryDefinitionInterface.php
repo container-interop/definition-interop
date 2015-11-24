@@ -1,6 +1,6 @@
 <?php
 
-namespace Mouf\Container\Definition;
+namespace Interop\Container\Definition;
 
 /**
  */

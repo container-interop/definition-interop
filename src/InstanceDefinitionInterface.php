@@ -1,6 +1,6 @@
 <?php
 
-namespace Mouf\Container\Definition;
+namespace Interop\Container\Definition;
 
 /**
  * This interface represents an instance declared using the "new" keyword followed by an optional list of
