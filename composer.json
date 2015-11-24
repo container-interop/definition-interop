@@ -1,7 +1,7 @@
 {
-    "name": "container-interop/compiler-interop",
+    "name": "container-interop/definition-interop",
     "type": "library",
-    "description": "Promoting the interoperability of container definition objects",
+    "description": "Promoting container interoperability through standard definitions",
     "license": "MIT",
     "autoload": {
         "psr-4": {
