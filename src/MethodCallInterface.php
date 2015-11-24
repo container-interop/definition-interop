@@ -1,4 +1,5 @@
 <?php
+
 namespace Mouf\Container\Definition;
 
 /**
@@ -7,16 +8,16 @@ namespace Mouf\Container\Definition;
 interface MethodCallInterface
 {
     /**
-     * Returns the name of the method
+     * Returns the name of the method.
      *
-     * @var string
+     * @return string
      */
     public function getMethodName();
 
     /**
      * Returns a list of arguments passed to the constructor.
      *
-     * @var array Array of scalars or ReferenceInterface, or array mixing scalars, arrays, and ReferenceInterface
+     * @return array Array of scalars or ReferenceInterface, or array mixing scalars, arrays, and ReferenceInterface
      */
     public function getArguments();
 }

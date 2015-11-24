@@ -1,9 +1,6 @@
 <?php
+
 namespace Mouf\Container\Definition;
-
-
-use Interop\Container\Compiler\DefinitionInterface;
-use Interop\Container\Compiler\InlineEntryInterface;
 
 /**
  * This interface represents an instance declared using the "new" keyword followed by an optional list of
@@ -24,8 +21,13 @@ interface InstanceDefinitionInterface extends DefinitionInterface
      */
     public function getConstructorParameters();
 
+    /**
+     * @return PropertyAssignmentInterface[]
+     */
     public function getPropertiesInjections();
 
+    /**
+     * @return MethodCallInterface[]
+     */
     public function getMethodCalls();
-
 }
