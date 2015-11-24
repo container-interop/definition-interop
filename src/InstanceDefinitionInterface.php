@@ -16,13 +16,13 @@ interface InstanceDefinitionInterface extends DefinitionInterface
     public function getClassName();
 
     /**
-     * Returns an array of parameters to pass to the constructor of the class.
+     * Returns an array of arguments to pass to the constructor of the class.
      *
-     * Each parameter is either a PHP scalar type or a ReferenceInterface instance.
+     * Each argument is either a PHP scalar type or a ReferenceInterface instance.
      *
      * @return array
      */
-    public function getConstructorParameters();
+    public function getConstructorArguments();
 
     /**
      * Returns an array of values or container entries to assign to public properties
