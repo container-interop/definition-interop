@@ -23,3 +23,13 @@ composer require container-interop/definition-interop@dev
 ```
 
 This package adheres to the [SemVer](http://semver.org/) specification and will be fully backward compatible between minor versions.
+
+## Compatible projects
+
+### Projects implementing *definition-interop*
+
+- [Assembly](https://github.com/mnapoli/assembly)
+
+### Projects consuming *definition-interop*
+
+- [Yaco](https://github.com/thecodingmachine/yaco)
