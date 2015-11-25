@@ -1,23 +1,25 @@
 # Container Definitions Interoperability
 
-*definition-interop* tries to identify and standardize features in *container definitions* to achieve
-interoperability.
+*definition-interop* tries to offer a solution for writing **cross-framework modules**.
 
-While *container-interop/container-interop* tries to standardize how we fetch entries from containers,
-*container-interop/definition-interop* tries to standardize how to describe container entries.
+## Introduction
 
-The work done in this project is not officially endorsed by the [PHP-FIG](http://www.php-fig.org/), but it is being
-worked on by members of PHP-FIG and other good developers. We adhere to the spirit and ideals of PHP-FIG, and hope
-this project will pave the$ way for one or more future PSRs.
+Modules (aka packages or bundles) are widespread in modern frameworks. Unfortunately each framework has its own convention and tools for writing them. The goal of *container-interop* and more specifically *definition-interop* is to help developers write modules that can work in any framework.
 
+Cross-framework modules can take advantage of PSR-7 (HTTP requests and responses abstractions) as well as Puli (resource location in packages), but the last missing piece is letting modules register container entries. That is necessary so that modules can expose services to users.
+
+## Scope
+
+While *container-interop/container-interop* tries to standardize how to fetch entries from containers, *container-interop/definition-interop* tries to standardize how to define container entries.
+
+The definitions standardized in this package *are only meant to be used by modules*; they are not meant to cover every use case of every container. Given this restricted scope, the definitions are intentionally simple in order to be easily supported by every container.
+
+With that in mind, users can rest assured that they can use all the features offered by their container of choice, while only module developers have to make use of the standard definitions.
 
 ## Installation
-
-You can install this package through Composer:
 
 ```
 composer require container-interop/definition-interop@dev
 ```
 
-The packages adheres to the [SemVer](http://semver.org/) specification, and there will be full backward compatibility
-between minor versions.
+This package adheres to the [SemVer](http://semver.org/) specification and will be fully backward compatible between minor versions.
