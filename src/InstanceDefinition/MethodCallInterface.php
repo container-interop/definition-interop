@@ -1,6 +1,6 @@
 <?php
 
-namespace Interop\Container\Definition;
+namespace Interop\Container\Definition\InstanceDefinition;
 
 /**
  * Represents a call to a method.

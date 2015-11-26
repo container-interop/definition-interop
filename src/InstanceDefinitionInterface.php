@@ -2,6 +2,9 @@
 
 namespace Interop\Container\Definition;
 
+use Interop\Container\Definition\InstanceDefinition\MethodCallInterface;
+use Interop\Container\Definition\InstanceDefinition\PropertyAssignmentInterface;
+
 /**
  * Represents an instance declared using the "new" keyword followed by an optional list of
  * method calls and properties assignations.

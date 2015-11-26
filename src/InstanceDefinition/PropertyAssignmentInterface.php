@@ -1,6 +1,8 @@
 <?php
 
-namespace Interop\Container\Definition;
+namespace Interop\Container\Definition\InstanceDefinition;
+
+use Interop\Container\Definition\ReferenceInterface;
 
 /**
  * Represents an assignment of a property.
