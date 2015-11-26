@@ -17,7 +17,7 @@ interface PropertyAssignmentInterface
     /**
      * Returns the value or container entry to assign to the property.
      *
-     * @return scalar|ReferenceInterface
+     * @return mixed|ReferenceInterface
      */
     public function getValue();
 }
