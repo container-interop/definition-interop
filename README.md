@@ -33,3 +33,7 @@ This package adheres to the [SemVer](http://semver.org/) specification and will 
 ### Projects consuming *definition-interop*
 
 - [Yaco](https://github.com/thecodingmachine/yaco)
+
+### Modules built using *definition-interop*
+
+- [Glide module](https://github.com/mnapoli/glide-module)
