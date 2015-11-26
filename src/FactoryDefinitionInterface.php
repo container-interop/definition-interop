@@ -28,4 +28,11 @@ interface FactoryDefinitionInterface extends DefinitionInterface
      * @return string
      */
     public function getMethodName();
+
+    /**
+     * Returns the list of arguments to pass when calling the method.
+     *
+     * @return array Array of scalars or ReferenceInterface.
+     */
+    public function getArguments();
 }
