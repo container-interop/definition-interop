@@ -1,6 +1,6 @@
 <?php
 
-namespace Interop\Container\Definition\InstanceDefinition;
+namespace Interop\Container\Definition\ObjectInitializer;
 
 /**
  * Represents a call to a method.

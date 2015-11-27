@@ -1,16 +1,16 @@
 <?php
 
-namespace Interop\Container\Definition\InstanceDefinition;
+namespace Interop\Container\Definition\ObjectInitializer;
 
 use Interop\Container\Definition\ReferenceInterface;
 
 /**
- * Represents an assignment of a property.
+ * Represents the assignment of a property.
  */
 interface PropertyAssignmentInterface
 {
     /**
-     * Returns the name of the property.
+     * Returns the name of the property to set.
      *
      * @return string
      */
