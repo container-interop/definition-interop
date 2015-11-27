@@ -2,11 +2,16 @@
 
 namespace Interop\Container\Definition;
 
+use Interop\Container\Definition\ObjectInitializer\MethodCallInterface;
+use Interop\Container\Definition\ObjectInitializer\PropertyAssignmentInterface;
+
 /**
- * Represents an instance declared using the "new" keyword followed by an optional list of
- * method calls and properties assignations.
+ * Represents a class instance.
+ *
+ * To create the object, arguments can be passed to its constructor, methods can be called
+ * and properties can be set.
  */
-interface InstanceDefinitionInterface extends DefinitionInterface
+interface ObjectDefinitionInterface extends DefinitionInterface
 {
     /**
      * Returns the name of the class to instantiate.
