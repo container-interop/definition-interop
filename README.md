@@ -28,11 +28,23 @@ This package adheres to the [SemVer](http://semver.org/) specification and will 
 
 ### Projects implementing *definition-interop*
 
+Projects providing definition classes implementing the *definition-interop* interfaces.
+
 - [Assembly](https://github.com/mnapoli/assembly)
+
+### Loaders
+
+Projects reading configuration files in any kind of format and generating *definition-interop* compatible definitions.
+
+- [YamlDefinitionLoader](https://github.com/thecodingmachine/yaml-definition-loader): Loads definitions from YAML files.
+  Accepts a subset of Symfony YAML file format.
 
 ### Projects consuming *definition-interop*
 
-- [Yaco](https://github.com/thecodingmachine/yaco)
+Projects reading *definition-interop* compatible definitions and turning them into actual container entries.
+
+- [Assembly](https://github.com/mnapoli/assembly): provides a simple *container-interop* compatible container
+- [Yaco](https://github.com/thecodingmachine/yaco): provides a compiler generating *container-interop* compatible containers
 
 ### Modules built using *definition-interop*
 
