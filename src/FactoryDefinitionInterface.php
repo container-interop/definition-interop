@@ -16,11 +16,13 @@ namespace Interop\Container\Definition;
 interface FactoryDefinitionInterface extends DefinitionInterface
 {
     /**
-     * Returns a reference to the container entry that will act as a factory.
+     * Returns a reference to the container entry that will act as a factory or a fully qualified class name.
+     * If a fully qualified class name is passed, the method is called statically on the class, otherwise,
+     * the method is called on the target instance of the reference.
      *
-     * @return ReferenceInterface
+     * @return ReferenceInterface|string
      */
-    public function getReference();
+    public function getFactory();
 
     /**
      * Returns the name of the method to call on the factory.
