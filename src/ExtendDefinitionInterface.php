@@ -9,9 +9,9 @@ use Interop\Container\Definition\ObjectInitializer\ObjectManipulatorInterface;
 interface ExtendDefinitionInterface extends ObjectManipulatorInterface
 {
     /**
-     * Returns a reference to the container entry that will be extended.
+     * Returns the identifier to the container entry that will be extended.
      *
-     * @return ReferenceInterface
+     * @return string
      */
     public function getExtended();
 }

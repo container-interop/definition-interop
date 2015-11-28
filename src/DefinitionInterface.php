@@ -19,7 +19,7 @@ interface DefinitionInterface
      *
      * @param ExtendDefinitionInterface $extension
      *
-     * @return mixed
+     * @return $this
      */
     public function addExtension(ExtendDefinitionInterface $extension);
 
