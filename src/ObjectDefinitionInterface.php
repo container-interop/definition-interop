@@ -3,6 +3,7 @@
 namespace Interop\Container\Definition;
 
 use Interop\Container\Definition\ObjectInitializer\MethodCallInterface;
+use Interop\Container\Definition\ObjectInitializer\ObjectManipulatorInterface;
 use Interop\Container\Definition\ObjectInitializer\PropertyAssignmentInterface;
 
 /**
@@ -11,7 +12,7 @@ use Interop\Container\Definition\ObjectInitializer\PropertyAssignmentInterface;
  * To create the object, arguments can be passed to its constructor, methods can be called
  * and properties can be set.
  */
-interface ObjectDefinitionInterface extends DefinitionInterface
+interface ObjectDefinitionInterface extends DefinitionInterface, ObjectManipulatorInterface
 {
     /**
      * Returns the name of the class to instantiate.
@@ -28,19 +29,4 @@ interface ObjectDefinitionInterface extends DefinitionInterface
      * @return array
      */
     public function getConstructorArguments();
-
-    /**
-     * Returns an array of values or container entries to assign to public properties
-     * of the instance.
-     *
-     * @return PropertyAssignmentInterface[]
-     */
-    public function getPropertyAssignments();
-
-    /**
-     * Returns an array of methods to call on the instance.
-     *
-     * @return MethodCallInterface[]
-     */
-    public function getMethodCalls();
 }

@@ -13,4 +13,20 @@ interface DefinitionInterface
      * @return string
      */
     public function getIdentifier();
+
+    /**
+     * Append an extension to this entry.
+     *
+     * @param ExtendDefinitionInterface $extension
+     *
+     * @return mixed
+     */
+    public function addExtension(ExtendDefinitionInterface $extension);
+
+    /**
+     * Returns the extensions to apply to this entry.
+     *
+     * @return ExtendDefinitionInterface[]
+     */
+    public function getExtensions();
 }
