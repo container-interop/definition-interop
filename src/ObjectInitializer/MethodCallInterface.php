@@ -17,7 +17,10 @@ interface MethodCallInterface
     /**
      * Returns the list of arguments to pass when calling the method.
      *
-     * @return array Array of scalars or ReferenceInterface.
+     * Each argument is either a PHP scalar type or a DefinitionInterface instance. Definitions will
+     * be resolved before being passed as arguments.
+     *
+     * @return array Array of scalars or DefinitionInterface.
      */
     public function getArguments();
 }

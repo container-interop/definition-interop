@@ -23,7 +23,8 @@ interface ObjectDefinitionInterface extends DefinitionInterface
     /**
      * Returns an array of arguments to pass to the constructor of the class.
      *
-     * Each argument is either a PHP scalar type or a ReferenceInterface instance.
+     * Each argument is either a PHP scalar type or a DefinitionInterface instance. Definitions will
+     * be resolved before being passed as arguments.
      *
      * @return array
      */

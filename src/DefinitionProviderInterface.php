@@ -10,7 +10,14 @@ interface DefinitionProviderInterface
     /**
      * Returns the definition to register in the container.
      *
-     * @return DefinitionInterface[]
+     * Definitions must be indexed by their entry ID. For example:
+     *
+     *     return [
+     *         'logger' => ...
+     *         'mailer' => ...
+     *     ];
+     *
+     * @return array
      */
     public function getDefinitions();
 }

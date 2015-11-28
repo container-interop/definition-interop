@@ -21,12 +21,12 @@ namespace Interop\Container\Definition;
 interface FactoryCallDefinitionInterface extends DefinitionInterface
 {
     /**
-     * Returns a reference to the container entry that will act as a factory or a fully qualified class name.
+     * Returns the class name or object that will act as a factory.
      *
-     * If a fully qualified class name is passed, the method is called statically on the class, otherwise,
-     * the method is called on the target instance of the reference.
+     * - if a fully qualified class name is returned, the method is called statically on the class
+     * - if a definition is returned, the method is called on the result of the definition (which must be an object)
      *
-     * @return ReferenceInterface|string
+     * @return DefinitionInterface|string
      */
     public function getFactory();
 
@@ -40,7 +40,10 @@ interface FactoryCallDefinitionInterface extends DefinitionInterface
     /**
      * Returns the list of arguments to pass when calling the method.
      *
-     * @return array Array of scalars or ReferenceInterface.
+     * Each argument is either a PHP scalar type or a DefinitionInterface instance. Definitions will
+     * be resolved before being passed as arguments.
+     *
+     * @return array Array of scalars or DefinitionInterface.
      */
     public function getArguments();
 }
