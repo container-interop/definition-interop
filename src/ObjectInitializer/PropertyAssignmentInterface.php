@@ -2,7 +2,7 @@
 
 namespace Interop\Container\Definition\ObjectInitializer;
 
-use Interop\Container\Definition\ReferenceInterface;
+use Interop\Container\Definition\DefinitionInterface;
 
 /**
  * Represents the assignment of a property.
@@ -17,9 +17,12 @@ interface PropertyAssignmentInterface
     public function getPropertyName();
 
     /**
-     * Returns the value or container entry to assign to the property.
+     * Returns the value to assign to the property.
      *
-     * @return mixed|ReferenceInterface
+     * If the value is a DefinitionInterface, it will be resolved before being
+     * assigned to the property.
+     *
+     * @return mixed|DefinitionInterface
      */
     public function getValue();
 }

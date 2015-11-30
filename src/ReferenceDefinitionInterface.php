@@ -5,10 +5,10 @@ namespace Interop\Container\Definition;
 /**
  * Pointer to a container entry.
  */
-interface ReferenceInterface
+interface ReferenceDefinitionInterface extends DefinitionInterface
 {
     /**
-     * Returns the name of the target container entry.
+     * Returns the identifier of the targeted container entry.
      *
      * @return string
      */
