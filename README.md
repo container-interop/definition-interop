@@ -46,6 +46,10 @@ Projects reading *definition-interop* compatible definitions and turning them in
 - [Assembly](https://github.com/mnapoli/assembly): provides a simple *container-interop* compatible container
 - [Yaco](https://github.com/thecodingmachine/yaco): provides a compiler generating *container-interop* compatible containers
 
+*Note:* A [dedicated test suite](https://github.com/container-interop/definition-interop-compiler-test-suite) is 
+available for projects consuming *definition-interop* compatible definitions. Those projects can use this test suite
+to check compliance with *definition-interop*.
+
 ### Modules built using *definition-interop*
 
 - [Glide module](https://github.com/mnapoli/glide-module)
