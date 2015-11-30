@@ -7,10 +7,4 @@ namespace Interop\Container\Definition;
  */
 interface DefinitionInterface
 {
-    /**
-     * Returns the value that identifies the entry in the container.
-     *
-     * @return string
-     */
-    public function getIdentifier();
 }
