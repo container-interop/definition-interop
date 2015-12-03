@@ -17,7 +17,7 @@ interface DefinitionProviderInterface
      *         'mailer' => ...
      *     ];
      *
-     * @return array
+     * @return DefinitionInterface[]
      */
     public function getDefinitions();
 }
