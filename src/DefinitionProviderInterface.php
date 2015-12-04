@@ -17,7 +17,14 @@ interface DefinitionProviderInterface
      *         'mailer' => ...
      *     ];
      *
-     * @return array
+     * Definitions MUST be objects implementing one of those interfaces:
+     *
+     * - `ObjectDefinitionInterface`
+     * - `FactoryCallDefinitionInterface`
+     * - `ParameterDefinitionInterface`
+     * - `ReferenceDefinitionInterface`
+     *
+     * @return DefinitionInterface[]
      */
     public function getDefinitions();
 }
