@@ -1,5 +1,7 @@
 # Container Definitions Interoperability
 
+[![Join the chat at https://gitter.im/container-interop/definition-interop](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/container-interop/definition-interop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 *definition-interop* tries to offer a solution for writing **cross-framework modules**.
 
 ## Introduction
